@@ -1,0 +1,267 @@
+/* Clean slate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dark theme colors with Python yellow accent */
+:root {
+    --bg-color: #1c1c1c;               /* Dark background */
+    --text-color: #e0e0e0;             /* Light text */
+    --accent-color: #FFD43B;           /* Python yellow */
+    --accent-color-dim: #997f24;       /* Dimmed yellow for subtle accents */
+    --secondary-bg: #2d2d2d;           /* Slightly lighter than bg */
+    --border-color: #3d3d3d;           /* Subtle border */
+    --hover-color: #FFD43B;            /* Python yellow */
+}
+
+/* Simple system fonts */
+body {
+    font-family: monospace;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/* Simple navigation */
+nav {
+    margin-bottom: 4rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+/* Basic typography */
+h1, h2, h3 {
+    margin: 2rem 0 1rem 0;
+    color: var(--accent-color);
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+/* Links */
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text-color);
+}
+
+a:hover {
+    border-bottom: 2px solid var(--hover-color);
+    color: var(--hover-color);
+}
+
+/* Tech stack tags */
+.tech {
+    margin: 1rem 0;
+}
+
+code {
+    background: var(--secondary-bg);
+    padding: 0.2rem 0.4rem;
+    margin-right: 0.5rem;
+    border-radius: 3px;
+    color: var(--accent-color);
+    border: 1px solid var(--border-color);
+}
+
+/* Project cards */
+.project {
+    margin-bottom: 2rem;
+    padding: 1.2rem;
+    background: var(--secondary-bg);
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.project:hover {
+    border-color: var(--hover-color);
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.project-header h3 {
+    margin: 0;
+}
+
+.project-header h3 a {
+    color: var(--accent-color);
+    border-bottom: none;
+}
+
+.project-header h3 a:hover {
+    color: var(--hover-color);
+}
+
+.repo-icon {
+    font-family: monospace;
+    color: var(--accent-color);
+}
+
+.project-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0.8rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.lang-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.lang-dot.python { background: #3572A5; }
+.lang-dot.php { background: #4F5D95; }
+
+/* Simple responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+}
+
+.location {
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 1.5rem;
+    padding: 0.8rem;
+    background: var(--secondary-bg);
+    border-radius: 4px;
+    border: 1px solid #333;
+}
+
+.experience-item h3, .education-item h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.company-info {
+    color: var(--text-color);
+    margin: 0.3rem 0;
+}
+
+.location-small {
+    color: var(--text-color);
+    opacity: 0.7;
+    font-size: 0.9em;
+    margin-left: 1rem;
+}
+
+.date-range {
+    color: var(--accent-color-dim);
+    font-size: 0.9em;
+    font-family: monospace;
+    margin-top: 0.3rem;
+}
+
+.summary {
+    margin: 1rem 0;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+/* About section layout */
+#about {
+    position: relative;
+    padding-right: 180px; /* Space for profile pic */
+}
+
+.profile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-color-dim);
+    margin-bottom: 1rem;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    #about {
+        padding-right: 0;
+    }
+
+    .profile {
+        position: relative;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+}
+
+/* Optional: make the section header smaller too */
+#experience h2 {
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    font-size: 0.9em;
+    opacity: 0.7;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+footer:hover {
+    opacity: 1;
+}
+
+/* Project Grid Layout */
+#projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.project {
+    margin-bottom: 0;  /* Remove margin since we're using grid gap */
+    padding: 1rem;     /* Slightly reduced padding */
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    #projects .projects-grid {
+        grid-template-columns: 1fr;  /* Single column on mobile */
+    }
+} 
