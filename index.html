@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  
   <title>Hilmi Azizi - Python Developer, Automation & Data Engineer</title>
   <meta name="title" content="Hilmi Azizi - Python Developer, Automation & Data Engineer" />
   <meta name="description" content="I'm Hilmi Azizi, a Python developer specializing in automation, bots, data scraping, and backend systems. Based in Central Java, Indonesia. Explore my portfolio and open-source projects." />
   <meta name="author" content="Hilmi Azizi" />
   <meta name="keywords" content="Hilmi Azizi, Python Developer, Automation Engineer, Web Scraping, Data Extraction, Bots, CLI Tools, GitHub, Indonesia Developer" />
   <meta name="robots" content="index, follow" />
+
+  <!-- Canonical URL (FIXED) -->
   <link rel="canonical" href="https://hilmiazizi.com/" />
 
   <!-- Open Graph -->
@@ -33,55 +35,390 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <h1>Hilmi Azizi – Python Developer</h1>
-  <p>Python developer specializing in automation, bots, and data extraction.</p>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/hilmiazizi/tokopaedi">Tokopaedi</a>: Python scraper for Tokopedia with mobile pricing support.</li>
-      <li><a href="https://github.com/hilmiazizi/zillow_scrapers">Zillow Scraper</a>: Scraping Zillow data using Playwright.</li>
-      <li><a href="https://github.com/hilmiazizi/commit-stats">Commit Stats</a>: GitHub commit analysis tool.</li>
-      <!-- You can paste more project entries here -->
-    </ul>
-  </section>
+    <main>
+        <section id="about">
+            <div class="profile">
+                <img src="https://avatars.githubusercontent.com/u/38760459" alt="Hilmi Azizi" class="profile-pic">
+            </div>
+            
+            <h1>Hilmi Azizi</h1>
+            <p>Python Developer</p>
+            <p class="location">📍 Central Java, Indonesia</p>
+            <p class="summary">I write Python scripts to automate boring stuff. Sometimes I build bots, sometimes I break things. Currently having fun with web scraping & data extraction.</p>
+            
+            <div class="tech">
+                <code>Python</code>
+                <code>Automation</code>
+                <code>Bots</code>
+                <code>Data</code>
+                <code>CLI</code>
+            </div>
+        </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:root@hilmiazizi.com">root@hilmiazizi.com</a></p>
-    <p>GitHub: <a href="https://github.com/hilmiazizi" target="_blank">github.com/hilmiazizi</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/hilmiazizi" target="_blank">linkedin.com/in/hilmiazizi</a></p>
-  </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Software Engineer</h3>
+                <div class="company-info">
+                    <span>MixRank - United States</span>
+                </div>
+                <div class="date-range">May 2024 - Present</div>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Software Engineer</h3>
+                <div class="company-info">
+                    <span>Proxycurl - Singapore</span>
+                </div>
+                <div class="date-range">July 2024 - February 2025</div>
+            </div>
 
-  <footer>
-    <p>&copy; 2025 Hilmi Azizi. Built with minimal CSS because I'd rather write Python.</p>
-  </footer>
+            <div class="experience-item">
+                <h3>Odoo Developer</h3>
+                <div class="company-info">
+                    <span>Metrocom Jaddi Technology - Semarang, Central Java, Indonesia</span>
+                </div>
+                <div class="date-range">March 2024 - July 2024</div>
+            </div>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Hilmi Azizi",
-    "url": "https://hilmiazizi.com",
-    "image": "https://avatars.githubusercontent.com/u/38760459",
-    "sameAs": [
-      "https://github.com/hilmiazizi",
-      "https://linkedin.com/in/hilmiazizi"
-    ],
-    "jobTitle": "Python Developer",
-    "worksFor": [
-      { "@type": "Organization", "name": "MixRank" },
-      { "@type": "Organization", "name": "Proxycurl" },
-      { "@type": "Organization", "name": "Metrocom Jaddi Technology" }
-    ],
-    "description": "Python developer specializing in automation, bots, and data extraction",
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "Central Java",
-      "addressCountry": "ID"
-    }
-  }
-  </script>
+            <div class="education-item">
+                <h3>Education</h3>
+                <div class="company-info">
+                    <span>Universitas Semarang</span>
+                    <span>Bachelor's degree, Information Technology</span>
+                </div>
+                <div class="date-range">2019 - 2024</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <div class="project-header">
+                        <span class="repo-icon">📦</span>
+                        <h3><a href="https://github.com/hilmiazizi/tokopaedi" target="_blank">Tokopaedi</a></h3>
+                    </div>
+                    <p>A Python scraper for Tokopedia that supports filtered product search, detailed product information, and customer reviews with accurate mobile pricing and Jupyter Notebook compatibility. Available on PyPi</p>
+                    <div class="project-meta">
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/stars/hilmiazizi/tokopaedi?style=social">
+                        </span>
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/forks/hilmiazizi/tokopaedi?style=social">
+                        </span>
+                        <span class="meta-item">
+                            <img src="https://static.pepy.tech/badge/tokopaedi"/>
+                        </span>
+                    </div>
+                    <a href="https://github.com/hilmiazizi/tokopaedi" target="_blank">github/tokopaedi →</a>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <span class="repo-icon">📦</span>
+                        <h3><a href="https://github.com/hilmiazizi/zillow_scrapers" target="_blank">zillow_scrapers</a></h3>
+                    </div>
+                    <p>Scrape Zilow with python Playwright</p>
+                    <div class="project-meta">
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/stars/hilmiazizi/zillow_scrapers?style=social">
+                        </span>
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/forks/hilmiazizi/zillow_scrapers?style=social">
+                        </span>
+                    </div>
+                    <a href="https://github.com/hilmiazizi/zillow_scrapers" target="_blank">github/zillow_scrapers →</a>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <span class="repo-icon">📦</span>
+                        <h3><a href="https://github.com/hilmiazizi/commit-stats" target="_blank">commit-stats</a></h3>
+                    </div>
+                    <p>Python tool to analyze repository commit statistics including author contributions, time periods, and language-specific changes using GitHub API</p>
+                    <div class="project-meta">
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/stars/hilmiazizi/commit-stats?style=social">
+                        </span>
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/forks/hilmiazizi/commit-stats?style=social">
+                        </span>
+                    </div>
+                    <a href="https://github.com/hilmiazizi/commit-stats" target="_blank">github/commit-stats →</a>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <span class="repo-icon">📦</span>
+                        <h3><a href="https://github.com/hilmiazizi/auto-selftwit" target="_blank">auto-selftwit</a></h3>
+                    </div>
+                    <p>Automated Twitter bot using Tweepy-self to post daily "Today in History" content with scheduled posting capabilities</p>
+                    <div class="project-meta">
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/stars/hilmiazizi/auto-selftwit?style=social">
+                        </span>
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/forks/hilmiazizi/auto-selftwit?style=social">
+                        </span>
+                    </div>
+                    <a href="https://github.com/hilmiazizi/auto-selftwit" target="_blank">github/auto-selftwit →</a>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <span class="repo-icon">📦</span>
+                        <h3><a href="https://github.com/hilmiazizi/CertSubber" target="_blank">CertSubber</a></h3>
+                    </div>
+                    <p>Security tool that extracts and validates subdomains from SSL certificate fingerprints using crt.sh data</p>
+                    <div class="project-meta">
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/stars/hilmiazizi/CertSubber?style=social">
+                        </span>
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/forks/hilmiazizi/CertSubber?style=social">
+                        </span>
+                    </div>
+                    <a href="https://github.com/hilmiazizi/CertSubber" target="_blank">github/CertSubber →</a>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <span class="repo-icon">📦</span>
+                        <h3><a href="https://github.com/hilmiazizi/Tsar-Bot" target="_blank">Tsar-Bot</a></h3>
+                    </div>
+                    <p>Cryptocurrency trading bot leveraging NLTK's VADER for Twitter sentiment analysis, integrated with Binance Futures for automated trading</p>
+                    <div class="project-meta">
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/stars/hilmiazizi/Tsar-Bot?style=social">
+                        </span>
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/forks/hilmiazizi/Tsar-Bot?style=social">
+                        </span>
+                    </div>
+                    <a href="https://github.com/hilmiazizi/Tsar-Bot" target="_blank">github/Tsar-Bot →</a>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <span class="repo-icon">📦</span>
+                        <h3><a href="https://github.com/hilmiazizi/Python-Youtube-Generator" target="_blank">Python-Youtube-Generator</a></h3>
+                    </div>
+                    <p>Video generation tool that creates YouTube content by combining images/videos with Azure Neural TTS for automated voiceovers</p>
+                    <div class="project-meta">
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/stars/hilmiazizi/Python-Youtube-Generator?style=social">
+                        </span>
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/forks/hilmiazizi/Python-Youtube-Generator?style=social">
+                        </span>
+                    </div>
+                    <a href="https://github.com/hilmiazizi/Python-Youtube-Generator" target="_blank">github/Python-Youtube-Generator →</a>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <span class="repo-icon">📦</span>
+                        <h3><a href="https://github.com/hilmiazizi/Unofficial-Twitter-Data-Miner" target="_blank">Unofficial-Twitter-Data-Miner</a></h3>
+                    </div>
+                    <p>Twitter scraping tool that extracts public tweets without API requirements, featuring language detection and CSV export</p>
+                    <div class="project-meta">
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/stars/hilmiazizi/Unofficial-Twitter-Data-Miner?style=social">
+                        </span>
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/forks/hilmiazizi/Unofficial-Twitter-Data-Miner?style=social">
+                        </span>
+                    </div>
+                    <a href="https://github.com/hilmiazizi/Unofficial-Twitter-Data-Miner" target="_blank">github/Unofficial-Twitter-Data-Miner →</a>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <span class="repo-icon">📦</span>
+                        <h3><a href="https://github.com/hilmiazizi/Twitter-Username-Extracor" target="_blank">Twitter-Username-Extracor</a></h3>
+                    </div>
+                    <p>Twitter Username & Hashtags Extractor</p>
+                    <div class="project-meta">
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/stars/hilmiazizi/Twitter-Username-Extracor?style=social">
+                        </span>
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/forks/hilmiazizi/Twitter-Username-Extracor?style=social">
+                        </span>
+                    </div>
+                    <a href="https://github.com/hilmiazizi/Twitter-Username-Extracor" target="_blank">github/Twitter-Username-Extracor →</a>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <span class="repo-icon">📦</span>
+                        <h3><a href="https://github.com/hilmiazizi/TsarFuzzer" target="_blank">TsarFuzzer</a></h3>
+                    </div>
+                    <p>Subdomain enumeration and fuzzing tool for security testing, with multi-threaded scanning capabilities</p>
+                    <div class="project-meta">
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/stars/hilmiazizi/TsarFuzzer?style=social">
+                        </span>
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/forks/hilmiazizi/TsarFuzzer?style=social">
+                        </span>
+                    </div>
+                    <a href="https://github.com/hilmiazizi/TsarFuzzer" target="_blank">github/TsarFuzzer →</a>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <span class="repo-icon">📦</span>
+                        <h3><a href="https://github.com/hilmiazizi/XMailer" target="_blank">XMailer</a></h3>
+                    </div>
+                    <p>CLI-based bulk email tool with customizable templates, delay controls, and automated inbox combination testing</p>
+                    <div class="project-meta">
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/stars/hilmiazizi/XMailer?style=social">
+                        </span>
+                        <span class="meta-item">
+                            <img src="https://img.shields.io/github/forks/hilmiazizi/XMailer?style=social">
+                        </span>
+                    </div>
+                    <a href="https://github.com/hilmiazizi/XMailer" target="_blank">github/XMailer →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                <a href="mailto:root@hilmiazizi.com" target="_blank">root@hilmiazizi.com</a> /
+                <a href="https://github.com/hilmiazizi" target="_blank">github</a> /
+                <a href="https://linkedin.com/in/hilmiazizi" target="_blank">linkedin</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Design assisted by <a href="https://anthropic.com/claude" target="_blank">Claude</a>. Built with minimal CSS because I'd rather write Python.</p>
+    </footer>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Hilmi Azizi",
+          "url": "https://hilmiazizi.com",
+          "image": "https://avatars.githubusercontent.com/u/38760459",
+          "sameAs": [
+            "https://github.com/hilmiazizi",
+            "https://linkedin.com/in/hilmiazizi"
+          ],
+          "jobTitle": "Software Engineer",
+          "worksFor": [
+            { "@type": "Organization", "name": "MixRank" },
+            { "@type": "Organization", "name": "Proxycurl" },
+            { "@type": "Organization", "name": "Metrocom Jaddi Technology" }
+          ],
+          "description": "Python developer specializing in automation, bots, and data extraction",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Central Java",
+            "addressCountry": "ID"
+          }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Project",
+              "name": "Tokopaedi",
+              "url": "https://github.com/hilmiazizi/tokopaedi",
+              "description": "Python scraper for Tokopedia supporting mobile pricing and Jupyter Notebook integration.",
+              "creator": { "@type": "Person", "name": "Hilmi Azizi" }
+            },
+            {
+              "@type": "Project",
+              "name": "zillow_scrapers",
+              "url": "https://github.com/hilmiazizi/zillow_scrapers",
+              "description": "Scrape Zillow data using Playwright in Python.",
+              "creator": { "@type": "Person", "name": "Hilmi Azizi" }
+            },
+            {
+              "@type": "Project",
+              "name": "commit-stats",
+              "url": "https://github.com/hilmiazizi/commit-stats",
+              "description": "Analyze GitHub commit stats including author contributions and language breakdowns.",
+              "creator": { "@type": "Person", "name": "Hilmi Azizi" }
+            },
+            {
+              "@type": "Project",
+              "name": "auto-selftwit",
+              "url": "https://github.com/hilmiazizi/auto-selftwit",
+              "description": "Twitter bot that posts historical facts daily using Tweepy-self and scheduled jobs.",
+              "creator": { "@type": "Person", "name": "Hilmi Azizi" }
+            },
+            {
+              "@type": "Project",
+              "name": "CertSubber",
+              "url": "https://github.com/hilmiazizi/CertSubber",
+              "description": "Extract and validate subdomains from SSL certificate data using crt.sh.",
+              "creator": { "@type": "Person", "name": "Hilmi Azizi" }
+            },
+            {
+              "@type": "Project",
+              "name": "Tsar-Bot",
+              "url": "https://github.com/hilmiazizi/Tsar-Bot",
+              "description": "Crypto trading bot using Twitter sentiment analysis with NLTK VADER and Binance Futures.",
+              "creator": { "@type": "Person", "name": "Hilmi Azizi" }
+            },
+            {
+              "@type": "Project",
+              "name": "Python-Youtube-Generator",
+              "url": "https://github.com/hilmiazizi/Python-Youtube-Generator",
+              "description": "Generate YouTube videos with image/audio pairing and Azure Neural TTS voiceover.",
+              "creator": { "@type": "Person", "name": "Hilmi Azizi" }
+            },
+            {
+              "@type": "Project",
+              "name": "Unofficial-Twitter-Data-Miner",
+              "url": "https://github.com/hilmiazizi/Unofficial-Twitter-Data-Miner",
+              "description": "Scrape public tweets without API, including CSV export and language detection.",
+              "creator": { "@type": "Person", "name": "Hilmi Azizi" }
+            },
+            {
+              "@type": "Project",
+              "name": "Twitter-Username-Extracor",
+              "url": "https://github.com/hilmiazizi/Twitter-Username-Extracor",
+              "description": "CLI tool to extract usernames and hashtags from Twitter data.",
+              "creator": { "@type": "Person", "name": "Hilmi Azizi" }
+            },
+            {
+              "@type": "Project",
+              "name": "TsarFuzzer",
+              "url": "https://github.com/hilmiazizi/TsarFuzzer",
+              "description": "Multi-threaded subdomain fuzzing and enumeration for bug bounty and pentesting.",
+              "creator": { "@type": "Person", "name": "Hilmi Azizi" }
+            },
+            {
+              "@type": "Project",
+              "name": "XMailer",
+              "url": "https://github.com/hilmiazizi/XMailer",
+              "description": "Bulk email CLI tool with delay control and custom templates.",
+              "creator": { "@type": "Person", "name": "Hilmi Azizi" }
+            }
+          ]
+        }
+    </script>
 </body>
 </html>
